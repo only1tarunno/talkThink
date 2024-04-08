@@ -468,8 +468,26 @@
     padding-bottom: 14px;
   }
   #accordionContent {
-    background-color: #edf0f4;
-    margin: 0 14px;
+    padding: 0px 14px;
+  }
+
+  .custom-accordion-content {
+    padding: 10px 20px 10px 24px;
+    background: #edf0f4;
+    clip-path: polygon(96% 0%, 100% 50%, 96% 100%, 0% 100%, 4% 50%, 0% 0%);
+  }
+  #custom-accordion-content-first {
+    padding: 10px 20px 10px 24px;
+    background: #edf0f4;
+    clip-path: polygon(96% 0%, 100% 50%, 96% 100%, 0% 100%, 0% 50%, 0% 0%);
+  }
+  #custom-accordion-content-last {
+    padding: 10px 20px 10px 24px;
+    background: #edf0f4;
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 4% 50%, 0% 0%);
+  }
+  #contentItem5 {
+    flex-wrap: nowrap;
   }
 
   #commonItem4 {
