@@ -255,6 +255,15 @@
     height: 32px;
     border-radius: 0.125rem;
   }
+  #accordionButtonListPage::after {
+    right: 6px;
+    top: 31px;
+    border-radius: 4px;
+    transition: background 0.5s;
+    width: 76px;
+    height: 32px;
+    border-radius: 0.125rem;
+  }
 
   #accordionButton::after,
   #accordionButton::before {
@@ -262,12 +271,25 @@
     position: absolute;
     content: "";
   }
+  #accordionButtonListPage::after,
+  #accordionButtonListPage::before {
+    background-color: transparent;
+    position: absolute;
+    content: "";
+  }
 
   #accordionButton::before {
     background: transparent;
   }
+  #accordionButtonListPage::before {
+    background: transparent;
+  }
 
   #accordionButton.activeBtn::before {
+    transform: translateY(-50%) rotate(180deg);
+    transition: 0.5s all ease-in-out;
+  }
+  #accordionButtonListPage.activeBtn::before {
     transform: translateY(-50%) rotate(180deg);
     transition: 0.5s all ease-in-out;
   }
@@ -280,7 +302,15 @@
     background-color: transparent;
     border-radius: 0.125rem;
   }
+  #accordionButtonListPage.activeBtn::after {
+    background-color: transparent;
+    border-radius: 0.125rem;
+  }
   #accordionButton {
+    border: none;
+    padding-top: 14px;
+  }
+  #accordionButtonListPage {
     border: none;
     padding-top: 14px;
   }
@@ -460,6 +490,12 @@
     border-color: #fff;
     color: #262262;
   }
+  #accordionButtonListPage.activeBtn,
+  #accordionButtonListPage:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: #262262;
+  }
   #accordion {
     background-color: #fff;
     box-shadow: 0 2px 20px 0 #26226212;
@@ -525,6 +561,52 @@
     background-image: url(../img/assets/downarrow2.svg);
     transform: translateY(-50%) rotate(180deg);
     transition: 0.5s all ease-in-out;
+  }
+
+  #listpageArrow {
+    transition: 0.5s all ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #listpageArrow::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    background-image: url(../img/assets/ico-dd-open.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    transition: 0.5s all ease-in-out;
+  }
+
+  #accordionButtonListPage.activeBtn #listpageArrow::before {
+    background-image: url(../img/assets/downarrow2.svg);
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: 0.5s all ease-in-out;
+  }
+
+  .inner-accordion-btn {
+    background-color: transparent !important;
+    border-radius: 0;
+  }
+
+  #progressBar {
+    position: relative;
+    overflow: hidden;
+  }
+  #progressBar::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #f29008;
   }
 
   @media (max-width: 1200px) {

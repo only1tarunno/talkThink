@@ -275,14 +275,14 @@
           <div class="commonPadding">
             <!-- Employee onboarding start  -->
             <div class="Employee">
-              <div class="commonItem11">
+              <div class="flex md:flex-row flex-col gap-5 justify-between">
                 <div class="flex items-start">
                   <span
                     class="bg-[#262262] w-[70.55px] h-66px rounded-sm text-White flex justify-center items-center text-2xl self-center"
                   >
                     <img
                       src="img/assets/ico-run-white.png"
-                      class="w-30px h-[30px]"
+                      class="w-30px h-[30px] rounded-sm"
                       alt=""
                     />
                   </span>
@@ -290,7 +290,7 @@
                     <h2
                       class="lg:text-4xl text-2xl leading-[45px] text-Primary tracking-tight font-semibold"
                     >
-                      Employee onboarding
+                      thirdspace-apps-metadata
                     </h2>
                     <span class="block text-colorP text-sm leading-[26px]"
                       >jb/features/795-assessment-templates-schema</span
@@ -298,24 +298,26 @@
                   </div>
                 </div>
 
-                <button type="button" class="commonItem1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    class="self-center"
-                    height="17"
-                    viewBox="0 0 20 17"
-                    fill="none"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.103516 8.5C0.103516 13.1944 4.37582 17 9.64597 17C14.9136 16.9946 19.1824 13.1922 19.1884 8.5C19.1884 3.80558 14.9161 0 9.64597 0C4.37582 0 0.103516 3.80558 0.103516 8.5ZM1.57159 8.5C1.57159 4.5278 5.18661 1.30769 9.64597 1.30769C14.1033 1.31202 17.7155 4.52959 17.7204 8.5C17.7204 12.4722 14.1053 15.6923 9.64597 15.6923C5.18661 15.6923 1.57159 12.4722 1.57159 8.5ZM9.63643 12.204C9.23103 12.204 8.90239 11.9113 8.90239 11.5502V9.15385H6.21289C5.80749 9.15385 5.47885 8.86111 5.47885 8.5C5.47885 8.13889 5.80749 7.84615 6.21289 7.84615H8.90239V5.44981C8.90239 5.0887 9.23103 4.79596 9.63643 4.79596C10.0418 4.79596 10.3705 5.0887 10.3705 5.44981V7.84615H13.06C13.4654 7.84615 13.794 8.13889 13.794 8.5C13.794 8.86111 13.4654 9.15385 13.06 9.15385H10.3705V11.5502C10.3705 11.9113 10.0418 12.204 9.63643 12.204Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <span class="self-center">Re-run</span>
-                </button>
+                <div class="self-center">
+                  <button type="button" class="commonItem1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      class="self-center"
+                      height="17"
+                      viewBox="0 0 20 17"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.103516 8.5C0.103516 13.1944 4.37582 17 9.64597 17C14.9136 16.9946 19.1824 13.1922 19.1884 8.5C19.1884 3.80558 14.9161 0 9.64597 0C4.37582 0 0.103516 3.80558 0.103516 8.5ZM1.57159 8.5C1.57159 4.5278 5.18661 1.30769 9.64597 1.30769C14.1033 1.31202 17.7155 4.52959 17.7204 8.5C17.7204 12.4722 14.1053 15.6923 9.64597 15.6923C5.18661 15.6923 1.57159 12.4722 1.57159 8.5ZM9.63643 12.204C9.23103 12.204 8.90239 11.9113 8.90239 11.5502V9.15385H6.21289C5.80749 9.15385 5.47885 8.86111 5.47885 8.5C5.47885 8.13889 5.80749 7.84615 6.21289 7.84615H8.90239V5.44981C8.90239 5.0887 9.23103 4.79596 9.63643 4.79596C10.0418 4.79596 10.3705 5.0887 10.3705 5.44981V7.84615H13.06C13.4654 7.84615 13.794 8.13889 13.794 8.5C13.794 8.86111 13.4654 9.15385 13.06 9.15385H10.3705V11.5502C10.3705 11.9113 10.0418 12.204 9.63643 12.204Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span class="self-center">Re-run</span>
+                  </button>
+                </div>
               </div>
             </div>
             <!-- Employee onboarding end -->
@@ -365,7 +367,7 @@
                 </div>
                 <!-- right items  -->
                 <div>
-                  <span class="self-center text-[#262262]"
+                  <span class="self-center font-semibold text-[#262262]"
                     >7 targets processed
                   </span>
                 </div>
@@ -373,16 +375,1278 @@
             </div>
             <!-- meta data end  -->
 
-            <!-- accordion  -->
-            <!-- Recent Questions and items start  -->
-            <div class="pt-25px"></div>
-            <!-- Recent Questions and items end -->
+            <!-- accordion  and items start  -->
+            <div class="pt-25px">
+              <!-- single item parent accordion start -->
+              <div class="accordion-section mb-10px" id="accordion">
+                <button
+                  class="accordion-button commonItem8"
+                  id="accordionButtonListPage"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-20 bg-[#40982E] flex items-center justify-center rounded"
+                    >
+                      <img
+                        src="img/assets/complete-white.png"
+                        class="w-8 h-8"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex-1 ml-15px self-center space-y-2">
+                      <span
+                        class="commonItem6 text-[#262262] text-lg md:text-xl font-medium"
+                        >ThirdSpaceAppsAzureStamp</span
+                      >
+                      <span class="block text-colorP text-sm leading-[26px]"
+                        >https://github.com/thirdspace-london/thirdspace-apps-api-gateway/tree/codenative</span
+                      >
+                      <hr />
+                      <!-- meta data start  -->
+                      <div
+                        class="flex items-center flex-col gap-5 sm:flex-row justify-between"
+                      >
+                        <!-- left items  -->
+                        <div class="flex gap-x-5">
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/complete.svg"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#40982E]"
+                              >Complete
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/ico-clock.svg"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >Now
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/ico-files.png"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >13 files changed
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                        </div>
+                        <!-- right items  -->
+                        <div class="flex justify-end items-center gap-2">
+                          <span class="self-center font-semibold text-[#262262]"
+                            >7 targets processed
+                          </span>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- meta data end  -->
+                    </div>
+                  </div>
+                </button>
+
+                <!-- accordion content start  -->
+                <div class="accordion-content ml-24 mr-5 my-5">
+                  <!-- inner accordion item 1  -->
+
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/error-outline.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">5s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >GitHub Actions</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Unable to run post processing for
+                              ThirdSpaceAppsBackendService</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- single item parent accordion start -->
+              <div class="accordion-section mb-10px" id="accordion">
+                <button
+                  class="accordion-button commonItem8"
+                  id="accordionButtonListPage"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-20 bg-[#EDF0F4] flex items-center justify-center rounded"
+                    >
+                      <img
+                        src="img/assets/skipped-white.png"
+                        class="w-8 h-8"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex-1 ml-15px self-center space-y-2">
+                      <span
+                        class="commonItem6 text-[#262262] text-lg md:text-xl font-medium"
+                        >ThirdSpaceAppsApi</span
+                      >
+                      <span class="block text-colorP text-sm leading-[26px]"
+                        >https://github.com/thirdspace-london/thirdspace-apps-api-gateway/tree/codenative</span
+                      >
+                      <hr />
+                      <!-- meta data start  -->
+                      <div
+                        class="flex items-center flex-col gap-5 sm:flex-row justify-between"
+                      >
+                        <!-- left items  -->
+                        <div class="flex gap-x-5">
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/skipped.png"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >Skipped
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                        </div>
+                        <!-- right items  -->
+                        <div class="flex justify-end items-center gap-2">
+                          <span class="self-center font-semibold text-[#262262]"
+                            >7 targets processed
+                          </span>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- meta data end  -->
+                    </div>
+                  </div>
+                </button>
+
+                <!-- accordion content start  -->
+                <div class="accordion-content ml-24 mr-5 my-5">
+                  <!-- inner accordion item 1  -->
+
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/error-outline.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">5s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >GitHub Actions</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Unable to run post processing for
+                              ThirdSpaceAppsBackendService</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- single item parent accordion start -->
+              <div class="accordion-section mb-10px" id="accordion">
+                <button
+                  class="accordion-button commonItem8"
+                  id="accordionButtonListPage"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-20 bg-[#C41212] flex items-center justify-center rounded"
+                    >
+                      <img
+                        src="img/assets/errored-white.png"
+                        class="w-8 h-8"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex-1 ml-15px self-center space-y-2">
+                      <span
+                        class="commonItem6 text-[#262262] text-lg md:text-xl font-medium"
+                        >ThirdSpaceAppsApiGateway</span
+                      >
+                      <span class="block text-colorP text-sm leading-[26px]"
+                        >https://github.com/thirdspace-london/thirdspace-apps-api-gateway/tree/codenative</span
+                      >
+                      <hr />
+                      <!-- meta data start  -->
+                      <div
+                        class="flex items-center flex-col gap-5 sm:flex-row justify-between"
+                      >
+                        <!-- left items  -->
+                        <div class="flex gap-x-5">
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/errored.svg"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#C41212]"
+                              >Errored
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/ico-clock.svg"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >Now
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/ico-files.png"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >13 files changed
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                        </div>
+                        <!-- right items  -->
+                        <div class="flex justify-end items-center gap-2">
+                          <span class="self-center font-semibold text-[#262262]"
+                            >7 targets processed
+                          </span>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- meta data end  -->
+                    </div>
+                  </div>
+                </button>
+
+                <!-- accordion content start  -->
+                <div class="accordion-content px-4 ml-24 mr-5 my-5 space-y-2">
+                  <!-- inner accordion item 1  -->
+                  <div
+                    class="flex border rounded border-[#C41212] bg-[#f9e7e7] px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#c4121266]"
+                    >
+                      <img
+                        src="img/assets/error-outline.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#C41212] mt-2">5s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >GitHub Actions</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Unable to run post processing for
+                              ThirdSpaceAppsBackendService</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+                          <ul class="space-y-2 pl-5">
+                            <li>
+                              at System.IO.Path.Combine(String path1, String
+                              path2)
+                            </li>
+                            <li>
+                              at
+                              Catapult.Builder.DotNet.SqlServer.Migrations.MigrationGenerator.CreateFromDbContext(String
+                              assemblyPath) in
+                              /src/Catapult.Builder.DotNet.SqlServer.Migrations/MigrationGenerator.cs:line
+                              106
+                            </li>
+                            <li>
+                              at
+                              Catapult.Builder.DotNet.SqlServer.Migrations.MigrationGenerator.CreateDbContext(String
+                              path, String projectName, String folderName) in
+                              /src/Catapult.Builder.DotNet.SqlServer.Migrations/
+                              MigrationGenerator.cs:line 93
+                            </li>
+                            <li>
+                              at
+                              Catapult.Builder.DotNet.SqlServer.Migrations.MigrationGenerator.GenerateMigrations(String
+                              path, String projectName, String folderName) in
+                              /src/Catapult.Builder.DotNet.SqlServer.Migrations/
+                              MigrationGenerator.cs:line 38
+                            </li>
+                            <li>
+                              at
+                              Catapult.Builder.DotNet.SqlServer.Migrations.SqlDatabaseMigrationBuilder.PostProcess(Solution
+                              solution, TargetDefinition target, String
+                              targetPath, String templatePath,
+                              TemplateFolderDefinition templateFolderDefinition)
+                              in
+                              /src/Catapult.Builder.DotNet.SqlServer.Migrations/
+                              SqlDatabaseMigrationBuilder.cs:line 78
+                            </li>
+                            <li>
+                              at
+                              CodeNative.Catapult.Engine.ProjectBuilder.PostProcess(IRunLogger
+                              runLogger, CatapultContext context,
+                              TargetDefinition targetDefinition, String
+                              targetPath, String templatePath) in /src/
+                              CodeNative.Catapult.Engine/ProjectBuilder.cs:line
+                              214
+                            </li>
+                            <li>
+                              at
+                              CodeNative.Catapult.Engine.Launcher.Launch(IRunContext
+                              runContext) in /src/
+                              CodeNative.Catapult.Engine/Launcher.cs:line 202
+                            </li>
+                          </ul>
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inner accordion item 1  -->
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/ico-outline-complete.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">2s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >Checkout template</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Unable to run post processing for
+                              ThirdSpaceAppsBackendService</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- inner accordion item 1  -->
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/ico-outline-complete.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">2s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >Checkout target</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Checked out codenative to
+                              codenativebot/codenative/jb/features/795-assessment-templates-schema
+                              from 67acc6fec7f2a5fe1bb116147d21a7aa80860121
+                              using git version 2.39.2</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inner accordion item 1  -->
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/ico-outline-complete.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">2s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >Checkout target</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Checked out codenative to
+                              codenativebot/codenative/jb/features/795-assessment-templates-schema
+                              from 67acc6fec7f2a5fe1bb116147d21a7aa80860121
+                              using git version 2.39.2</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inner accordion item 1  -->
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/ico-outline-complete.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">2s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >Checkout target</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Checked out codenative to
+                              codenativebot/codenative/jb/features/795-assessment-templates-schema
+                              from 67acc6fec7f2a5fe1bb116147d21a7aa80860121
+                              using git version 2.39.2</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inner accordion item 1  -->
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/ico-outline-complete.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">2s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >Checkout target</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Checked out codenative to
+                              codenativebot/codenative/jb/features/795-assessment-templates-schema
+                              from 67acc6fec7f2a5fe1bb116147d21a7aa80860121
+                              using git version 2.39.2</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- inner accordion item 1  -->
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/ico-outline-complete.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">2s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >Checkout target</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Checked out codenative to
+                              codenativebot/codenative/jb/features/795-assessment-templates-schema
+                              from 67acc6fec7f2a5fe1bb116147d21a7aa80860121
+                              using git version 2.39.2</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- single item parent accordion start -->
+              <div class="accordion-section mb-10px" id="accordion">
+                <button
+                  class="accordion-button commonItem8"
+                  id="accordionButtonListPage"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-20 bg-[#40982E] flex items-center justify-center rounded"
+                    >
+                      <img
+                        src="img/assets/complete-chnages-white.png"
+                        class="w-8 h-8"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex-1 ml-15px self-center space-y-2">
+                      <span
+                        class="commonItem6 text-[#262262] text-lg md:text-xl font-medium"
+                        >CircuitSyncApi</span
+                      >
+                      <span class="block text-colorP text-sm leading-[26px]"
+                        >CircuitSyncApi</span
+                      >
+                      <hr />
+                      <!-- meta data start  -->
+                      <div
+                        class="flex items-center flex-col gap-5 sm:flex-row justify-between"
+                      >
+                        <!-- left items  -->
+                        <div class="flex gap-x-5">
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/complete2.svg"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#40982E]"
+                              >Complete with edited files
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/ico-clock.svg"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >Now
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/ico-files.png"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >13 files changed
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                        </div>
+                        <!-- right items  -->
+                        <div class="flex justify-end items-center gap-2">
+                          <span class="self-center font-semibold text-[#262262]"
+                            >7 targets processed
+                          </span>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- meta data end  -->
+                    </div>
+                  </div>
+                </button>
+
+                <!-- accordion content start  -->
+                <div class="accordion-content ml-24 mr-5 my-5">
+                  <!-- inner accordion item 1  -->
+
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/error-outline.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">5s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >GitHub Actions</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Unable to run post processing for
+                              ThirdSpaceAppsBackendService</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- single item parent accordion start -->
+              <div class="accordion-section mb-10px" id="accordion">
+                <button
+                  class="accordion-button commonItem8"
+                  id="accordionButtonListPage"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-20 bg-[#40982E] flex items-center justify-center rounded"
+                    >
+                      <img
+                        src="img/assets/complete-white.png"
+                        class="w-8 h-8"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex-1 ml-15px self-center space-y-2">
+                      <span
+                        class="commonItem6 text-[#262262] text-lg md:text-xl font-medium"
+                        >ThirdSpaceAppsBackendService</span
+                      >
+                      <span class="block text-colorP text-sm leading-[26px]"
+                        >https://github.com/thirdspace-london/thirdspace-apps-api-gateway/tree/codenative</span
+                      >
+                      <hr />
+                      <!-- meta data start  -->
+                      <div
+                        class="flex items-center flex-col gap-5 sm:flex-row justify-between"
+                      >
+                        <!-- left items  -->
+                        <div class="flex gap-x-5">
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/complete.svg"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#40982E]"
+                              >Complete
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/ico-clock.svg"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >Now
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                          <!-- inner single item start  -->
+                          <span
+                            class="commonItem5 flex items-center"
+                            id="contentItem5"
+                          >
+                            <span class="">
+                              <img
+                                src="img/assets/ico-files.png"
+                                class="w-5 h-5"
+                                alt=""
+                              />
+                            </span>
+                            <span class="self-center text-[#262262]"
+                              >13 files changed
+                            </span></span
+                          >
+                          <!-- inner single item end -->
+                        </div>
+                        <!-- right items  -->
+                        <div class="flex justify-end items-center gap-2">
+                          <span class="self-center font-semibold text-[#262262]"
+                            >7 targets processed
+                          </span>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- meta data end  -->
+                    </div>
+                  </div>
+                </button>
+
+                <!-- accordion content start  -->
+                <div class="accordion-content ml-24 mr-5 my-5">
+                  <!-- inner accordion item 1  -->
+
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/error-outline.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">5s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >GitHub Actions</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Unable to run post processing for
+                              ThirdSpaceAppsBackendService</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- single item parent accordion start -->
+              <div class="accordion-section mb-10px" id="accordion">
+                <button
+                  class="accordion-button commonItem8"
+                  id="accordionButtonListPage"
+                >
+                  <div class="flex">
+                    <div
+                      class="w-20 bg-[#F29008] flex items-center justify-center rounded"
+                    >
+                      <img
+                        src="img/assets/progress-sett.svg"
+                        class="w-8 h-8"
+                        alt=""
+                      />
+                    </div>
+                    <div class="flex-1 ml-15px self-center space-y-2">
+                      <span
+                        class="commonItem6 text-[#262262] text-lg md:text-xl font-medium"
+                        >PortalWeb</span
+                      >
+                      <span class="block text-colorP text-sm leading-[26px]"
+                        >https://github.com/thirdspace-london/portal-web/tree/codenative</span
+                      >
+                      <hr />
+                      <!-- meta data start  -->
+                      <div
+                        class="flex items-center flex-col gap-y-5 gap-x-20 sm:flex-row justify-between"
+                      >
+                        <!-- left items  -->
+                        <div class="flex-1">
+                          <div class="flex gap-x-5">
+                            <!-- inner single item start  -->
+                            <span
+                              class="commonItem5 flex items-center"
+                              id="contentItem5"
+                            >
+                              <span class="">
+                                <img
+                                  src="img/assets/inprogress.png"
+                                  class="w-5 h-5"
+                                  alt=""
+                                />
+                              </span>
+                              <span class="self-center"
+                                >In progress
+                              </span></span
+                            >
+                            <!-- inner single item end -->
+                            <!-- progressbar start here  -->
+                            <div
+                              class="flex-1 h-3 rounded-md bg-[#B3C4CE] self-center"
+                              id="progressBar"
+                            ></div>
+                          </div>
+                        </div>
+                        <!-- right items  -->
+                        <div class="flex justify-end items-center gap-2">
+                          <span class="self-center font-semibold text-[#262262]"
+                            >7 targets processed
+                          </span>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </div>
+                      <!-- meta data end  -->
+                    </div>
+                  </div>
+                </button>
+
+                <!-- accordion content start  -->
+                <div class="accordion-content ml-24 mr-5 my-5">
+                  <!-- inner accordion item 1  -->
+
+                  <div
+                    class="flex border rounded border-[#DCE1E9] bg-transparent px-4 py-[14px]"
+                  >
+                    <div
+                      class="pr-4 w-20 border-r flex flex-col items-center border-[#DCE1E9]"
+                    >
+                      <img
+                        src="img/assets/error-outline.png"
+                        class="w-[30px] h-[30px]"
+                        alt=""
+                      />
+                      <p class="text-center text-xs text-[#262262] mt-2">5s</p>
+                    </div>
+                    <div class="accordion-section ps-5">
+                      <button
+                        class="accordion-button2 commonItem8 inner-accordion-btn"
+                        id="accordionButtonListPage"
+                      >
+                        <div class="flex justify-between w-full">
+                          <div class="">
+                            <span class="commonItem6" id="pagetitle"
+                              >GitHub Actions</span
+                            >
+                            <span
+                              class="block text-colorP text-sm leading-[26px]"
+                              >Unable to run post processing for
+                              ThirdSpaceAppsBackendService</span
+                            >
+                          </div>
+                          <div
+                            class="inline-block w-8 h-8 bg-[#262262] rounded"
+                            id="listpageArrow"
+                          ></div>
+                        </div>
+                      </button>
+                      <!-- inner accordion content  -->
+                      <div class="accordion-content my-4" id="accordionContent">
+                        <div class="bg-white p-4 rounded space-y-2 pb-8">
+                          <!-- inner accordion content start  -->
+                          <p>
+                            Unable to run post processing for
+                            **ThirdSpaceAppsBackendService**Value cannot be
+                            null. (Parameter 'path2') at
+                            System.ArgumentNullException.Throw(String paramName)
+                          </p>
+
+                          <!-- inner accordion content end  -->
+                        </div>
+                        <!-- single item end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- accordion  and items end -->
         </div>
-        <!-- main right items end -->
       </div>
-      <!-- flex body wrapper end -->
+      <!-- main right items end -->
     </div>
+    <!-- flex body wrapper end -->
+
     <!-- wrapper end -->
 
     <script src="./index.js" type="module"></script>
