@@ -1781,12 +1781,6 @@
         accordionButtons.forEach((button, index) => {
           const content = button.nextElementSibling;
 
-          if (index === 0) {
-            // Open the first section by default
-            content.style.maxHeight = content.scrollHeight + "px";
-            button.classList.add("activeBtn");
-          }
-
           button.addEventListener("click", function () {
             // Close all sections except the one that was clicked
             accordionButtons.forEach((btn, i) => {
