@@ -641,3 +641,8 @@
     transition: width 1s, opacity 1s;
   }
 }
+@media (max-width: 991px) {
+  #accordionContent {
+    padding: 0 0px;
+  }
+}
